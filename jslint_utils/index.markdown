@@ -93,25 +93,7 @@ already put a project together, you'll need to do a few things:
 Questions?  Bugs?
 -----------------
 
-If anything's unclear, [file a bug via GitHub][issues], [drop me an email][email],
-or comment here:
-
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-  /**
-    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
-    */
-  var disqus_identifier = "jslintutils",
-      disqus_url        = "http://projects.mikewest.org/jslint_utils/",
-      disqus_skip_auth  = true;
-  (function() {
-   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-   dsq.src = 'http://projectsmikewestorg.disqus.com/embed.js';
-   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=projectsmikewestorg">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+If anything's unclear, [file a bug via GitHub][issues] or [drop me an email][email].
 
 <small class="license">&copy;2010 <a href="http://mikewest.org/">Mike West</a>: Project source is <a href="http://github.com/mikewest/jslint-utils/blob/master/LICENSE.markdown" rel="license">BSD licensed</a>, and <a href="http://github.com/mikewest/jslint-utils">available on GitHub</a></small>
 
