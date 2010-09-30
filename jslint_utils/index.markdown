@@ -79,7 +79,6 @@ or comment here:
     * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
     */
   var disqus_identifier = "jslintutils",
-      disqus_developer  = 1,
       disqus_skip_auth  = true;
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
