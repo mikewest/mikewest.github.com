@@ -17,3 +17,5 @@ Projects
 
 [static_gettext]: /static_gettext/
 [jslintutils]:    /jslint_utils/
+
+<small class="license">&copy;2010 <a href="http://mikewest.org/">Mike West</a></small>
