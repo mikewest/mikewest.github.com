@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" type="text/css" href="/assets/reset-fonts.css">
+    <link rel="stylesheet" type="text/css" href="/assets/core.css">
+  </head>
+  <body {% if page.bodyclass %}class="{{ page.bodyclass }}"{% endif %}>
+    <menu>
+      <li><a href="/" rel="home">projects<span><span>@</span>mikewest</span></a></li>
+    </menu>
+
+    {{ content }}
+  </body>
+</html>
