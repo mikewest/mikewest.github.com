@@ -25,7 +25,7 @@ Usage: CLI
 With [Rhino installed][rhino], you can lint a specific JavaScript file
 or stylesheet from the command line by running:
 
-    run-jslint.sh [FILE TO LINT]
+    /path/to/run-jslint.sh [FILE TO LINT]
 
 If the file is clean, the script will output on `stdout`:
 
@@ -57,15 +57,38 @@ Edit line 12 of `jslint-to-xml.sh` to specify your basename:
 With that configuration out of the way, you can generate an XML report
 manually by running:
 
-    jslint-to-xml.sh [FILE TO LINT] [REPORT DIRECTORY]
+    /path/to/jslint-to-xml.sh [FILE TO LINT] [REPORT DIRECTORY]
 
 The file specified as the script's first argument will be linted, and a
 report will be generated in the directory specified as the second argument.
 
 Running against multiple files at once is generally best done via `find`.
-Take a look at [the project's =Makefile=][make] for how I'd suggest that
-best be done.
+Take a look at [the project's `Makefile`][make] for how I'd suggest that
+best be done.  Make sure you configure the source and reporting directories
+by changing the relevant lines of the file, and it should Just Work™.
 
+Hudson Configuration
+--------------------
+
+In your Hudson project, you'll need to do a tiny bit of configuration work
+in order to get linting running on an automated basis.  Assuming you've
+already put a project together, you'll need to do a few things:
+
+1.  Add a new build step that runs `make hudson` in the source directory
+    of your static assets.  You'll find this in the "Build" panel of the
+    project configuration.
+
+    <img src="/jslint_utils/hudson-build.png" width="561" alt="Screenshot of the build panel in Hudson config" class="screenshot">
+
+2.  Instruct Hudson to look for JUnit-style test reports by checking the
+    "Publish JUnit test report result" box in "Post-build Actions", and 
+    entering the report directory you've configured in the `Makefile`.
+
+    <img src="/jslint_utils/hudson-xmlpath.png" width="561" alt="Screenshot of the post-build panel in Hudson config" class="screenshot">
+
+3.  Commit something, and watch while Hudson does it's thing.
+
+4.  Pat yourself on the back for a job well done.
 
 Questions?  Bugs?
 -----------------
@@ -79,6 +102,7 @@ or comment here:
     * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
     */
   var disqus_identifier = "jslintutils",
+      disqus_url        = "http://projects.mikewest.org/jslint_utils/",
       disqus_skip_auth  = true;
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

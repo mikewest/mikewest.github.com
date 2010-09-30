@@ -8,7 +8,9 @@ layout: default
     </ul>
 
     {{ content }}
-    
+
+
+
     <ul class="usage" role="navigation">
       <li><a href="./install.html">Installation</a></li>
       <li><a href="./markup.html">Marking translatable strings</a></li>
@@ -16,4 +18,26 @@ layout: default
       <li><a href="./build.html">Generating target-language localizations</a></li>
       <li><a href="./cli.html">Command line usage</a></li>
     </ul>
+
+    <h2 class="contact">Questions?  Bugs?</h2>
+
+    <p>If anything's unclear, <a href="http://github.com/mikewest/static_gettext/issues">file a bug via GitHub</a>,
+    <a href="mailto:mike@mikewest.org">drop me an email</a>, or comment here:</p>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      /**
+        * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+        */
+      var disqus_identifier = "staticgettext",
+          disqus_url        = "http://projects.mikewest.org/static_gettext/",
+          disqus_skip_auth  = true;
+      (function() {
+       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+       dsq.src = 'http://projectsmikewestorg.disqus.com/embed.js';
+       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=projectsmikewestorg">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
     <small class="license">&copy;2010 <a href="http://mikewest.org/">Mike West</a>: Project source is <a href="http://github.com/mikewest/static_gettext/blob/master/LICENSE.markdown" rel="license">BSD licensed</a>, and <a href="http://github.com/mikewest/static_gettext">available on GitHub</a></small>
