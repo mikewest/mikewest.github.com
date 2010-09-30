@@ -6,7 +6,7 @@ layout: default
 ==================================================
 
 <ul class="actions">
-  <li><a href="http://github.com/mikewest/jslint-utils/tarball/v1.0" class="cta">Download current version (v1.0)</a></li> 
+  <li><a href="http://github.com/mikewest/jslint-utils/tarball/v1.1" class="cta">Download current version (v1.1)</a></li> 
   <li><a href="http://github.com/mikewest/jslint-utils" class="cta">Source code on GitHub</a></li> 
 </ul>
 
@@ -89,6 +89,8 @@ or comment here:
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=projectsmikewestorg">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<small class="license">&copy;2010 <a href="http://mikewest.org/">Mike West</a>: Project source is <a href="http://github.com/mikewest/jslint-utils/blob/master/LICENSE.markdown" rel="license">BSD licensed</a>, and <a href="http://github.com/mikewest/jslint-utils">available on GitHub</a></small>
 
 [JSLint]: http://jslint.com/
 [make]:   http://github.com/mikewest/jslint-utils/blob/master/Makefile

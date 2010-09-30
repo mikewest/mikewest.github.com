@@ -121,7 +121,7 @@ img {
 /**
  *  Copyright
  */
-small {
+.license {
     position:   absolute;
     bottom:     -2em;
     right:      0;
