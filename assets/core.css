@@ -85,6 +85,7 @@ h1 {
  */
 h2 {
   border-bottom:  1px solid #CCD;
+  clear:          both;
   font:           25px/1.35 Baskerville, Times, 'Times New Roman', serif;
   margin:         0 0 0.5em;
 }
@@ -107,10 +108,11 @@ ol,ul {
     }
 
 a {
-  color:  #4183C4;
+  color:            #4183C4;
+  text-decoration:  none;
 }
     a:hover, a:focus, a:active {
-        color:  #495961;
+        text-decoration:    underline;
     }
 
 img {
@@ -118,6 +120,45 @@ img {
     margin:     0 auto;
 }
 
+/**
+ *  Project List UL styles
+ */
+.projectlist ul {
+    list-style:     none;
+    overflow:       hidden;
+    padding:        0 20px;
+    margin:         0 -20px;
+}
+    .projectlist ul li {
+        float:          left;
+        list-style:     none;
+        margin-right:   40px;
+        width:          280px;
+    }
+        .projectlist ul li:nth-child( 2n ) {
+            margin-right:   0;
+        }
+        .projectlist ul li:nth-child( 2n+1 ) {
+            clear:          left;
+        }
+        /*280x158*/
+        .projectlist a img {
+            background:     #333;
+            border:         5px solid #666;
+            margin:         0 0 5px -5px;
+            margin-left:    -5px;
+            padding:        1px;
+
+            -webkit-transition:       background 0.4s ease-out;
+
+            -webkit-box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.75 );
+            -moz-box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.75 );
+            box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.75 );
+        }
+            .projectlist a:hover img {
+                background:     #FFF;
+                border:         5px solid #999;
+            }
 /**
  *  Copyright
  */
