@@ -11,7 +11,7 @@ Projects
     straightforward translation of static websites, but can be easily used for
     any set of files you'd like to translate as a group.
 
-*   [<img src="/jslint_utils/logo.png" alt="" width="280" height="158"> `jslint utils`][jslintutils] is a collection of scripts that wrap JSLint
+*   [<img src="/jslint_utils/logo.png" alt="" width="280" height="158" alt="Behold the power of Crockdson!  Tremble, mortals!"> `jslint utils`][jslintutils] is a collection of scripts that wrap JSLint
     and Rhino, enabling easy linting on the command line, and automated reporting
     of linting errors via a continuous integration system like Hudson.
 
