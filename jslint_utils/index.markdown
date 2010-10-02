@@ -1,6 +1,9 @@
 ---
 title:  "JSLint Utils"
 layout: default
+feed:   
+    url:    /jslint_utils/atom.xml
+    title:  "JSLint Utils: Changelog"
 ---
 `JSLint Utils` A collection of useful bash scripts
 ==================================================
@@ -93,13 +96,9 @@ already put a project together, you'll need to do a few things:
 Changelog
 ---------
 
-*   **v1.2 (2010-10-02)**: Added support for [Node.js][node] as an alternative to
-    Rhino. It's astounding how much faster things go when you don't have to load
-    Java on every execution.  
-
-*   **v1.1 (2010-09-30)**: Made the licensing clear: BSD all the way.
-
-*   **v1.0 (2010-04-18)**: Initial public release.
+{% for post in site.categories.jslint_utils %}
+*   **v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})**: {{ post.content }}
+{% endfor %}
 
 Questions?  Bugs?
 -----------------
