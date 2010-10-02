@@ -6,7 +6,7 @@ layout: default
 ==================================================
 
 <ul class="actions">
-  <li><a href="http://github.com/mikewest/jslint-utils/tarball/v1.1" class="cta">Download current version (v1.1)</a></li> 
+  <li><a href="http://github.com/mikewest/jslint-utils/tarball/v1.2" class="cta">Download current version (v1.2)</a></li> 
   <li><a href="http://github.com/mikewest/jslint-utils" class="cta">Source code on GitHub</a></li> 
 </ul>
 
@@ -22,8 +22,8 @@ linting errors via a continuous integration system like Hudson.
 Usage: CLI
 ----------
 
-With [Rhino installed][rhino], you can lint a specific JavaScript file
-or stylesheet from the command line by running:
+With [Node.js][node] (_recommended_) or [Rhino][rhino] installed, you can
+lint a specific JavaScript file or stylesheet from the command line by running:
 
     /path/to/run-jslint.sh [FILE TO LINT]
 
@@ -90,6 +90,17 @@ already put a project together, you'll need to do a few things:
 
 4.  Pat yourself on the back for a job well done.
 
+Changelog
+---------
+
+*   **v1.2 (2010-10-02)**: Added support for [Node.js][] as an alternative to
+    Rhino. It's astounding how much faster things go when you don't have to load
+    Java on every execution.  
+
+*   **v1.1 (2010-09-30)**: Made the licensing clear: BSD all the way.
+
+*   **v1.0 (2010-04-18)**: Initial public release.
+
 Questions?  Bugs?
 -----------------
 
@@ -100,5 +111,6 @@ If anything's unclear, [file a bug via GitHub][issues] or [drop me an email][ema
 [JSLint]: http://jslint.com/
 [make]:   http://github.com/mikewest/jslint-utils/blob/master/Makefile
 [issues]: http://github.com/mikewest/jslint-utils/issues
+[node]:   http://nodejs.org/#download
 [rhino]:  http://www.mozilla.org/rhino/download.html
 [email]:  mailto:mike@mikewest.org
