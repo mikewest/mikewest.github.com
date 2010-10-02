@@ -1,7 +1,7 @@
 ---
 title:    "Changelog"
 layout:   nil
-version:  0.10
+version:  "0.10"
 ---
 Changing workflow to remove the compliation step.  There's no good reason
 to expose that internal complexity to the user; she's never going to
