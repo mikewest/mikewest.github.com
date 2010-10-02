@@ -2,6 +2,9 @@
 title:      "`static_gettext`: Localization for Static Documents"
 layout:     static_gettext
 bodyclass:  homepage
+feed:   
+    url:    /static_gettext/atom.xml
+    title:  "`static_gettext`: Changelog"
 ---
 `static_gettext` is an internationalization framework for static, plaintext
 documents and templates.  It's geared towards straightforward translation
@@ -43,6 +46,14 @@ Let's take a quick look at the [example project][example] to get our bearings:
     project root:
 
         static_gettext.py --languages LANG_1,LANG_2,... --build
+
+
+Changelog
+---------
+
+{% for post in site.categories.static_gettext: %}
+*   **v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})**: {{ post.content }}
+{% endfor %}
 
 Detailed Usage
 --------------
