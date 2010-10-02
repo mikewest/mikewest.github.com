@@ -93,7 +93,7 @@ already put a project together, you'll need to do a few things:
 Changelog
 ---------
 
-*   **v1.2 (2010-10-02)**: Added support for [Node.js][] as an alternative to
+*   **v1.2 (2010-10-02)**: Added support for [Node.js][node] as an alternative to
     Rhino. It's astounding how much faster things go when you don't have to load
     Java on every execution.  
 

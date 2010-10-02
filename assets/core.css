@@ -34,6 +34,10 @@ body {
   -webkit-background-clip:  padding-box;
 }
 
+strong {
+    font-weight:    700;
+}
+
 menu {
   border-bottom:  5px solid #FFF;
   display:        block;
