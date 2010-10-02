@@ -15,51 +15,102 @@ to translate as a group.
 
 Implemented as a thin wrapper around the GNU [gettext][] project,
 `static_gettext` produces standard _message files_ that any translator can
-easily work with.  After translation, these files can be used to generate
+easily work with.  After translation, these can be used to generate
 localizations for your world-wide audience.
 
 [gettext]:  http://www.gnu.org/software/gettext/
 
-Quickstart
-----------
+Workflow
+--------
 
-After [installing the script][install], getting up and running is trivial.
-Let's take a quick look at the [example project][example] to get our bearings:
+*   Install the script by copying the latest stable version of
+    `static_gettext.py` somewhere useful (I'd suggest `~/bin` or
+    `/usr/local/bin`):
 
-*   **[Markup][]**: Documents to be localized are placed into the project's `src`
-    directory, and marked up for future translation by wrapping strings of
-    translatable text in `{{ '{' }}% blocktrans %}...{{ '{' }}% endblocktrans %}`
-    tags.
+        curl http://github.com/mikewest/static_gettext/raw/v0.10/static_gettext.py > /usr/local/bin/static_gettext.py
+    
+*   **Markup translatable strings** in your documents by wrapping them
+    in `{{ '{' }}% blocktrans %}...{{ '{' }}% endblocktrans %}` tags.
+    This should feel familar if you've ever worked with Django's i18n
+    engine.
+    
+    For example:
+    
+        <h1>Hello, world!</h1>
+    
+    Would be marked up as:
+    
+        <h1>{{ '{' }}% blocktrans %}Hello, world!{{ '{' }}% endblocktrans %}</h1>
+    
+    And so on...
+    
+*   **Extract those strings into _message files_** by pointing the `static_gettext`
+    script to your source files, telling it which languages you'll be localizing
+    your documents into, and to a directory into which the message files
+    ought be written:
 
-*   **[Extraction][]**: These translatable strings are extracted from the source
-    documents into _message files_ in standard `gettext` format.  A single
-    message file containing all translation strings is generated for each
-    target language as `locale/[TARGET]/LC_MESSAGES/messages.po` by running
-    the following command from the project root:
+        static_gettext.py --make-messages --languages LANG_1,LANG_2,LANG_3,... --input=/path/to/source/files --locale=/path/to/locale/files
 
-        static_gettext.py --languages LANG_1,LANG_2,... --make-messages
+    With that command, all files under `/path/to/source/files` will be read in,
+    and a single directory per target language will be generated under
+    `/path/to/locale/files`.  You'll end up with `.po` files for each:
 
-*   **[Build][]**: After translation, the `*.po` files are updated with the
-    localized strings and compiled into a `*.mo` binary format for quick
-    lookup.  These binary files are then used to generate localized versions
-    of the project as `build/[TARGET]/*` by running the following from the
-    project root:
+        /path/to/locale/files/en_US/LC_MESSAGES/messages.po
+        /path/to/locale/files/de_DE/LC_MESSAGES/messages.po
+        ...
+        /path/to/locale/files/LANG_N/LC_MESSAGES/messages.po
 
-        static_gettext.py --languages LANG_1,LANG_2,... --build
+    These _message files_ contain all translatable strings found in your source
+    documents, and maps each to a target-language translation.
 
+*   **Translate the message files**: In each message file, you'll see a list of
+    key/value pairs:
+
+        #: src/index.html:4
+        msgid "Hello, world!"
+        msgstr ""
+
+    Your job is straightforward: add the proper translation as the `msgstr` component
+    of the pair:
+
+        #: src/index.html:4
+        msgid "Hello, world!"
+        msgstr "Hallo Welt!"
+
+    Easy!
+
+*   **Build localized versions of your documents** by pointing the script at
+    your source files, the target languages, the message file root, and a directory
+    into which the localizations ought be written:
+
+        static_gettext.py --build --languages LANG_1,LANG_2,LANG_3,... --input=/path/to/source/files --locale=/path/to/locale/files --output=/path/to/output/files
+
+    A subdirectory of `/path/to/output/files` will be created for each target
+    language, and each file inside `/path/to/source/files` will be copied over
+    with translatable strings replaced with the target language version:
+
+        /path/to/output/files/en_US/index.html:
+
+            <h1>Hello, world!</h1>
+
+        /path/to/output/files/de_DE/index.html:
+
+            <h1>Hallo Welt!</h1>
+
+The [example project][example] you'll find in the [GitHub repository][example]
+shows the recommend project layout: everything in a single tree, with source
+files under `./src`, message files under `./locale`, and built localizations
+under `./build`.  Those serve as the defaults for the `--input`, `--output`,
+and `--locale` arguments.
+
+[example]:  http://github.com/mikewest/static_gettext/tree/master/example/
 
 Changelog
 ---------
 
+<ul>
 {% for post in site.categories.static_gettext: %}
-*   **v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})**: {{ post.content }}
+  <li><strong>v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})</strong>: {{ post.content }}</li>
 {% endfor %}
+</ul>
 
-Detailed Usage
---------------
-
-[Markup]:     markup.html
-[Extraction]: extraction.html
-[Build]:      build.html
-[install]:  ./install.html
-[example]:  http://github.com/mikewest/static_gettext/tree/master/example/

@@ -96,9 +96,11 @@ already put a project together, you'll need to do a few things:
 Changelog
 ---------
 
+<ul>
 {% for post in site.categories.jslint_utils %}
-*   **v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})**: {{ post.content }}
+  <li><strong>v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})</strong>: {{ post.content }}</li>
 {% endfor %}
+</ul>
 
 Questions?  Bugs?
 -----------------
