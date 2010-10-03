@@ -1,0 +1,48 @@
+/**
+ *  Calls to Action
+ *
+ *  Big buttons that beg to be clicked, denoting concrete actions to be
+ *  undertaken ("Download this project", "Fork on github", etc.)
+ *
+ *    
+ *    <ul class="actions">
+ *      <li><a href="http://github.com/mikewest/static_gettext/tarball/v0.11" class="cta">Download current version (v0.11)</a></li> 
+ *      <li><a href="http://github.com/mikewest/static_gettext" class="cta">Source code on GitHub</a></li> 
+ *     </ul>
+ *
+ *  @package  mkwst.projects
+ *  @module   cta
+ */
+.actions {
+  display:  block;
+  overflow: hidden;
+  padding:  1em 5px;
+}
+  .actions li {
+    list-style: none;
+    float:      left;
+  }
+    .actions li:last-child {
+      float:  right;
+    }
+
+    .cta {
+      background:       #495961;
+      border-radius:    5px;
+      color:            #FFF;
+      font-weight:      700;
+      font-size:        18px;
+      padding:          5px 10px;
+      text-decoration:  none;
+
+      -webkit-box-shadow: 0 0 3px rgba( 0, 0, 0, 0.75 );
+      -moz-box-shadow: 0 0 3px rgba( 0, 0, 0, 0.75 );
+      box-shadow: 0 0 3px rgba( 0, 0, 0, 0.75 );
+
+      -webkit-transition:       background 0.4s ease-out;
+      -webkit-background-clip:  padding-box;
+    }
+      .cta:hover, .cta:focus, .cta:active {
+        background: #4183C4;
+        color:      #FFF;
+      }

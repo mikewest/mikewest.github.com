@@ -1,0 +1,26 @@
+/**
+ *  Page-level Headers
+ *
+ *  Each page contains an `h1` with a meaningful text.
+ *  Project titles are often wrapped in `code` blocks
+ *  for that little extra oomph.
+ *
+ *    <h1>
+ *      <a href="/static_gettext" rel="home"><code>static_gettext</code></a><span class="offscreen">: </span>
+ *      Localization for Static Documents
+ *    </h1>
+ *
+ *  @package  mkwst.projects
+ *  @module   pageheader
+ */
+h1 {
+  font: 43px/1.35 Baskerville, Times, 'Times New Roman', serif;
+}
+  h1 code {
+    display:    block;
+    font-size:  71px;
+  }
+  h1 a {
+    color:            #000;
+    text-decoration:  none;
+  }

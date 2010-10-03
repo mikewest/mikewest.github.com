@@ -1,0 +1,36 @@
+/**
+ *  Site Header
+ *
+ *  Displays a link back to the homepage.  I'd like to work in a link to
+ *  mikewest.org, but haven't come up with a workable design.  This is
+ *  a halfway decent first pass.
+ *
+ *      <nav>
+ *          <a href="/" rel="home">projects<span><span>@</span>mikewest</span></a>
+ *      </nav>
+ *
+ *  @package    mkwst.projects
+ *  @module     siteheader
+ */
+
+nav {
+  border-bottom:  5px solid #FFF;
+  display:        block;
+  margin:         -5px -25px 0;
+  padding:        5px;
+
+  background: #000 url(/assets/stripe.png);
+}
+  nav a {
+    font:             700 15px/1 "Helvetica Neue", Arial, Helvetica, Sans Serif;
+    text-decoration:  none;
+    color:            #FFF;
+    font-variant:     small-caps;
+  }
+    nav a span {
+      color:  #BBB;
+    }
+      nav a span span {
+        font-size:  12px;
+        color:  #666;
+      }

@@ -6,6 +6,11 @@
 
     <link rel="stylesheet" type="text/css" href="/assets/reset-fonts.css">
     <link rel="stylesheet" type="text/css" href="/assets/core.css">
+    <link rel="stylesheet" type="text/css" href="/assets/siteheader.css">
+    <link rel="stylesheet" type="text/css" href="/assets/pageheader.css">
+    <link rel="stylesheet" type="text/css" href="/assets/projectlist.css">
+    <link rel="stylesheet" type="text/css" href="/assets/cta.css">
+    <link rel="stylesheet" type="text/css" href="/assets/code.css">
     <script type="text/javascript">
 
       var _gaq = _gaq || [];
@@ -24,9 +29,9 @@
     {% endif %}
   </head>
   <body {% if page.bodyclass %}class="{{ page.bodyclass }}"{% endif %}>
-    <menu>
-      <li><a href="/" rel="home">projects<span><span>@</span>mikewest</span></a></li>
-    </menu>
+    <nav>
+      <a href="/" rel="home">projects<span><span>@</span>mikewest</span></a>
+    </nav>
 
     {{ content }}
   </body>

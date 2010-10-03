@@ -1,0 +1,64 @@
+/**
+ *  Homepage Project List
+ *
+ *  Each project is listed on the homepage in a two column layout.
+ *  Projects all have links, and potentially contain logo images
+ *  as well (each of which is 280x158.  Ah, 16:9.).
+ *
+ *    <body class="projectlist">
+ *      ...
+ *      <ul>
+ *        <li>
+ *          <p><a href="[URL]">
+ *            <img src="[IMG]" width="280" height="158" alt="[ALT]">
+ *            [PROJECT TITLE]
+ *          </a> [PROJECT TEASER TEXT]</p>
+ *        </li>
+ *        ...
+ *        <li>
+ *          <p><a href="[URL]">
+ *            <img src="[IMG]" width="280" height="158" alt="[ALT]">
+ *            [PROJECT TITLE]
+ *          </a> [PROJECT TEASER TEXT]</p>
+ *        </li>
+ *      </ul>
+ *
+ *  @package  mkwst.projects
+ *  @module   projectlist
+ */
+.projectlist ul {
+    list-style:     none;
+    overflow:       hidden;
+    padding:        0 20px;
+    margin:         0 -20px;
+}
+    .projectlist ul li {
+        float:          left;
+        list-style:     none;
+        margin-right:   40px;
+        width:          280px;
+    }
+        .projectlist ul li:nth-child( 2n ) {
+            margin-right:   0;
+        }
+        .projectlist ul li:nth-child( 2n+1 ) {
+            clear:          left;
+        }
+        /*280x158*/
+        .projectlist a img {
+            background:     #333;
+            border:         5px solid #666;
+            margin:         0 0 5px -5px;
+            margin-left:    -5px;
+            padding:        1px;
+
+            -webkit-transition:       background 0.4s ease-out;
+
+            -webkit-box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.75 );
+            -moz-box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.75 );
+            box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.75 );
+        }
+            .projectlist a:hover img {
+                background:     #FFF;
+                border:         5px solid #999;
+            }
