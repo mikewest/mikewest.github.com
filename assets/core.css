@@ -29,7 +29,7 @@ body {
   background:     #EEE;
   border:         5px solid #FFF;
   border-radius:  0 0 5px 5px;
-  font:           16px/1.5 Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font:           16px/1.5 Georgia,Palatino,'Palatino Linotype',Times,'Times New Roman',serif;
   margin:         0 auto 2em;
   padding:        0 20px 20px;
   position:       relative;
