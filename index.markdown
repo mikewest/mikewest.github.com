@@ -34,14 +34,14 @@ Trivial Forks
 
 *   [Jekyll][]: My Jekyll fork, explained in detail [on my blog][jekyllfork].
 
-*   [`jslint`][jslint]: JSLint rocks, but it [needs some bad parts][badjslint].
+*   [`jslint′`][jslint]: JSLint rocks, but it [needs some bad parts][badjslint].
     I've forked it to add in some functionality that Douglas Crockford doesn't
     seem to be in any hurry to add, and to revert a few changes he's made that
     I think are more damaging than helpful.
 
 
 [yuidoc]:       http://github.com/mikewest/yuidoc/
-[jslint]:       http://github.com/mikewest/jslint/
+[jslint]:       /jslint
 [badjslint]:    http://mikewest.org/2010/05/jslint-needs-some-bad-parts
 [Jekyll]:       http://github.com/mikewest/jekyll
 [jekyllfork]:   http://mikewest.org/2009/11/my-jekyll-fork
