@@ -3,7 +3,7 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
- <title>Mike's JSLint Fork: Changelog</title>
+ <title>JSLint Prime Fork: Changelog</title>
  <link href="http://projects.mikewest.org/jslint/atom.xml" rel="self"/>
  <link href="http://projects.mikewest.org/jslint/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -15,11 +15,11 @@ layout: nil
 
  {% for post in site.categories.jslint %}
  <entry>
-   <title>Changelog: {{ post.date | date: "%Y-%m-%d" }}</title>
+   <title>JSLint′ Changelog: {{ post.date | date: "%Y-%m-%d" }}</title>
    <link href="http://projects.mikewest.org/jslint/"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://projects.mikewest.org/jslint{{ post.id }}</id>
-   <content type="html">&lt;strong&gt;{{ post.date | date: "%Y-%m-%d" }} (Based on JSLint from {{ post.version }})&lt;/strong&gt;: {{ post.content | xml_escape }}</content>
+   <content type="html">&lt;strong&gt;JSLint′ {{ post.date | date: "%Y-%m-%d" }} (Based on JSLint from {{ post.version }})&lt;/strong&gt;: {{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
  

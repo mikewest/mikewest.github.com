@@ -6,6 +6,10 @@ bodyclass:  projectlist
 Projects
 ========
 
+*   [<img src="/pyplaceholder/logo.png" alt="" width="280" height="158"> `PyPlaceholder`][pyplaceholder]
+    generates placeholder images to... well... hold the place of "real" images in 
+    layouts you're experimenting with.
+
 *   [<img src="/static_gettext/logo.png" alt="" width="280" height="158"> `static_gettext`][static_gettext]
     is an internationalization framework for static, plaintext documents and templates.
     It's geared towards straightforward translation of static websites, but can be
@@ -22,6 +26,7 @@ Projects
     functionality of Instapaper's bookmarklet in an elegant and embedded
     way.  I use it daily.
 
+[pyplaceholder]:    /pyplaceholder/
 [static_gettext]:   /static_gettext/
 [jslintutils]:      /jslint_utils/
 [StI]:              https://chrome.google.com/extensions/detail/liamajdghafnpofaconeimppimbdbhgi/

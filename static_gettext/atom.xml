@@ -15,11 +15,11 @@ layout: nil
 
  {% for post in site.categories.static_gettext %}
  <entry>
-   <title>Changelog: {{ post.date | date: "%Y-%m-%d" }}</title>
+   <title>`static_gettext` Changelog: {{ post.date | date: "%Y-%m-%d" }}</title>
    <link href="http://projects.mikewest.org/static_gettext/"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
    <id>http://projects.mikewest.org/static_gettext{{ post.id }}</id>
-   <content type="html">&lt;strong&gt;v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})&lt;/strong&gt;: {{ post.content | xml_escape }}</content>
+   <content type="html">&lt;strong&gt;`static_gettext` v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})&lt;/strong&gt;: {{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
  
