@@ -1,7 +1,7 @@
 ---
 title:    "Changelog"
 layout:   nil
-version:  "v1.1"
+version:  "v1.3"
 ---
 Added metadata to the rendered image:
 
@@ -15,6 +15,16 @@ Added metadata to the rendered image:
 
 *   Common ratios (16:9, 4:3) are given a margin of error for those
     pesky half-pixel roundings.
+
+*   Change usage: pass in individual properties instead of the
+    OptionParse object.  This makes it possible to use as a lib.
+
+*   Added error handling for bad hex values.
+
+*   Dropped the margin of error, and converted the aspect ratio
+    calculation to floating point.
+
+*   Making BSD license explicit.
 
 Closes [issue #1][gh-1].
 

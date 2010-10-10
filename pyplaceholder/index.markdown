@@ -9,7 +9,7 @@ PyPlaceholder
 =============
 
 <ul class="actions">
-  <li><a href="http://github.com/mikewest/pyplaceholder/tarball/v1.1" class="cta">Download current version (v1.1)</a></li> 
+  <li><a href="http://github.com/mikewest/pyplaceholder/tarball/v1.3" class="cta">Download current version (v1.3)</a></li> 
   <li><a href="http://github.com/mikewest/pyplaceholder" class="cta">Source on GitHub</a></li> 
 </ul>
 
@@ -37,6 +37,14 @@ I know, right?  Whatever width you'd like, whatever foreground, whatever
 background.  It's like magic.
 
 [pypng]: http://pypng.googlecode.com/svn/trunk/code/png.py
+
+Online Demo
+-----------
+
+You can build your own placeholders for as long as my server holds up:
+[placeholder.mikewest.org][placeholders]
+
+[placeholder]: http://placeholder.mikewest.org/
 
 Usage
 -----
