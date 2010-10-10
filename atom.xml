@@ -1,0 +1,39 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>projects.mikewest.org: Changelog</title>
+ <link href="http://projects.mikewest.org/atom.xml" rel="self"/>
+ <link href="http://projects.mikewest.org/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://projects.mikewest.org/</id>
+ <author>
+   <name>Mike West</name>
+   <email>mike@mikewest.org</email>
+ </author>
+
+ {% for post in site.posts limit:20 %}
+    {% assign project=post.categories[0] %}
+     {% case project %}
+        {% when 'pyplaceholder' %}
+            {% assign project='PyPlaceholder' %}
+        {% when 'jslint' %}
+            {% assign project='JSLint&prime;' %}
+        {% when 'jslint_utils' %}
+            {% assign project='JSLint Utils' %}
+        {% when 'static_gettext' %}
+            {% assign project='`static_gettext`' %}
+     {% endcase %}
+    <entry>
+        <title>{{ project }} Changelog: {{ post.date | date: "%Y-%m-%d" }}</title>
+        <link href="http://projects.mikewest.org/{{ post.categories[0] }}/"/>
+        <updated>{{ post.date | date_to_xmlschema }}</updated>
+        <id>http://projects.mikewest.org{{ post.id }}</id>
+        <content type="html">
+            &lt;strong&gt;{{ project }} {{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})&lt;/strong&gt;: {{ post.content | xml_escape }}
+        </content>
+    </entry>
+ {% endfor %}
+ 
+</feed>

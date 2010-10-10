@@ -20,6 +20,8 @@
     </script>
     {% if page.feed %}
       <link rel="alternate" type="application/atom+xml" href="{{ page.feed.url }}" title="{{ page.feed.title }}"> 
+    {% else %}
+      <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="projects.mikewest.org: Changelog"> 
     {% endif %}
   </head>
   <body {% if page.bodyclass %}class="{{ page.bodyclass }}"{% endif %}>
