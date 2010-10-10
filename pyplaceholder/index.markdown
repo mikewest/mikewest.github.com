@@ -42,7 +42,7 @@ Online Demo
 -----------
 
 You can build your own placeholders for as long as my server holds up:
-[placeholder.mikewest.org][placeholders]
+[placeholder.mikewest.org][placeholder]
 
 [placeholder]: http://placeholder.mikewest.org/
 
