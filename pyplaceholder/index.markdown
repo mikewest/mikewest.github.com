@@ -9,7 +9,7 @@ PyPlaceholder
 =============
 
 <ul class="actions">
-  <li><a href="http://github.com/mikewest/pyplaceholder/tarball/v0.5" class="cta">Download current version (v0.5)</a></li> 
+  <li><a href="http://github.com/mikewest/pyplaceholder/tarball/v1.1" class="cta">Download current version (v1.1)</a></li> 
   <li><a href="http://github.com/mikewest/pyplaceholder" class="cta">Source on GitHub</a></li> 
 </ul>
 
