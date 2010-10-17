@@ -9,7 +9,7 @@ feed:
 ==================================================
 
 <ul class="actions">
-  <li><a href="http://github.com/mikewest/jslint-utils/tarball/v1.2" class="cta">Download current version (v1.2)</a></li> 
+  <li><a href="http://github.com/mikewest/jslint-utils/tarball/v1.4" class="cta">Download current version (v1.4)</a></li> 
   <li><a href="http://github.com/mikewest/jslint-utils" class="cta">Source code on GitHub</a></li> 
 </ul>
 
