@@ -27,7 +27,7 @@ Workflow
     `static_gettext.py` somewhere useful (I'd suggest `~/bin` or
     `/usr/local/bin`):
 
-        curl http://github.com/mikewest/static_gettext/raw/v0.12/static_gettext.py > /usr/local/bin/static_gettext.py
+        curl http://github.com/mikewest/static_gettext/raw/v0.13/static_gettext.py > /usr/local/bin/static_gettext.py
     
 *   **Markup translatable strings** in your documents by wrapping them
     in `{{ '{' }}% blocktrans %}...{{ '{' }}% endblocktrans %}` tags.
