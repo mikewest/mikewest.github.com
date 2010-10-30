@@ -5,7 +5,7 @@ version:  0.13
 ---
 Adding rudimentary RTL support
 
-*   Added `{{ LANGUAGE_DIRECTION }}` tag that is replaced with either
+*   Added `{{ '{' }}{ LANGUAGE_DIRECTION }}` tag that is replaced with either
     `ltr` or `rtl` according to a whitelist culled [from Wikimedia][1].
     Thanks to [Tom Bigelajzen][2] for the push in the right direction.
 
