@@ -15,7 +15,9 @@ layout: nil
 
  {% for post in site.posts limit:20 %}
     {% assign project=post.categories[0] %}
-     {% case project %}
+      {% case project %}
+        {% when 'vimroom' %}
+            {% assign project='VimRoom' %}
         {% when 'pyplaceholder' %}
             {% assign project='PyPlaceholder' %}
         {% when 'jslint' %}

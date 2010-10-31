@@ -6,6 +6,11 @@ bodyclass:  projectlist
 Projects
 ========
 
+*   [<img src="/vimroom/logo.png" alt="" width="280" height="158"> VimRoom][vimroom]
+    is a Vim plugin that vaguely replicates the exciting distraction-free experience
+    of WriteRoom, but in Vim!  With syntax highlighing and status bars!  The dream
+    of every nerd!
+
 *   [<img src="/pyplaceholder/logo.png" alt="" width="280" height="158"> `PyPlaceholder`][pyplaceholder]
     generates placeholder images to... well... hold the place of "real" images in 
     layouts you're experimenting with.
@@ -29,6 +34,7 @@ Projects
 [pyplaceholder]:    /pyplaceholder/
 [static_gettext]:   /static_gettext/
 [jslintutils]:      /jslint_utils/
+[vimroom]:          /vimroom/
 [StI]:              https://chrome.google.com/extensions/detail/liamajdghafnpofaconeimppimbdbhgi/
 
 Trivial Forks

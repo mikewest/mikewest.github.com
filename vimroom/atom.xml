@@ -1,0 +1,26 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>VimRoom: Changelog</title>
+ <link href="http://projects.mikewest.org/vimroom/atom.xml" rel="self"/>
+ <link href="http://projects.mikewest.org/vimroom/"/>
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://projects.mikewest.org/vimroom/</id>
+ <author>
+   <name>Mike West</name>
+   <email>mike@mikewest.org</email>
+ </author>
+
+ {% for post in site.categories.vimroom %}
+ <entry>
+   <title>VimRoom Changelog: {{ post.date | date: "%Y-%m-%d" }}</title>
+   <link href="http://projects.mikewest.org/vimroom/"/>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://projects.mikewest.org/vimroom{{ post.id }}</id>
+   <content type="html">&lt;strong&gt;VimRoom v{{ post.version }} ({{ post.date | date: "%Y-%m-%d" }})&lt;/strong&gt;: {{ post.content | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+ 
+</feed>
