@@ -1,0 +1,12 @@
+---
+title:    "Changelog"
+layout:   nil
+version:  "0.2"
+---
+Finishing the initial feature set
+
+*   Clearing the status bar
+
+*   Adding toggle functionality (executing `<Plug>Vimroomize` a second
+    time will get you back to "normal" vim mode with the color scheme
+    reset, and all secondary windows closed..)
