@@ -9,7 +9,7 @@ VimRoom
 =======
 
 <ul class="actions">
-  <li><a href="http://github.com/mikewest/vimroom/tarball/v0.2" class="cta">Download current version (v0.2)</a></li> 
+  <li><a href="http://github.com/mikewest/vimroom/tarball/v0.3" class="cta">Download current version (v0.3)</a></li> 
   <li><a href="http://github.com/mikewest/vimroom" class="cta">Source on GitHub</a></li> 
 </ul>
 
@@ -20,11 +20,11 @@ Vim means that text ends up flat up against the left side of my monitor, but
 I'd much prefer it to be centered.  I'd also like a little of the visual
 clutter to fade away.  In other words, instead of this:
 
-<img src="./without-vimroom.jpg" width="600" height="433" alt="Screenshot of Vim, without VimRoom active">
+<img src="./without-vimroom.jpg" width="600" height="361" alt="Screenshot of Vim, without VimRoom active">
 
 I'd like to work in this:
 
-<img src="./with-vimroom.jpg" width="600" height="433" alt="Screenshot of vim, with VimRoom active">
+<img src="./with-vimroom.jpg" width="600" height="361" alt="Screenshot of vim, with VimRoom active">
 
 Some of this is possible with [MacVim][], but I'd rather do as much as
 possible in a platform-independent way.  So, command-line Vim it is.
@@ -52,6 +52,7 @@ Changing any of these assumptions is a simple matter of setting variables in you
 *   `g:vimroom_width` is the width of your workspace.
 *   `g:vimroom_min_sidebar_width` is the minimum sidebar width.
 *   `g:vimroom_background` is the background color to be used for hiding elements.
+*   `g:vimroom_scrolloff` specifies how many lines of text ought appear before and after the cursor.  This defaults to 999, which centers the cursor on the screen.
 
 You can bind the `<Plug>Vimroomize` function to any key combination you like via the usual mechanisms.  For example:
 
