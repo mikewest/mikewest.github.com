@@ -9,7 +9,7 @@ VimRoom
 =======
 
 <ul class="actions">
-  <li><a href="http://github.com/mikewest/vimroom/tarball/v0.3" class="cta">Download current version (v0.3)</a></li> 
+  <li><a href="http://github.com/mikewest/vimroom/tarball/v0.4" class="cta">Download current version (v0.4)</a></li> 
   <li><a href="http://github.com/mikewest/vimroom" class="cta">Source on GitHub</a></li> 
 </ul>
 
@@ -45,18 +45,19 @@ Without Pathogen, installation is almost as trivial: simply copy `./plugins/vimr
 Configuration
 -------------
 
-By default, VimRoom binds `<Leader>V` to `<Plug>Vimroomize`, and sets up an 80 column workspace with at least 5 columns of space on either side (it doesn't help at all to have single-column sidebars, you see).  It assumes a black background when hiding visual distractions.
+By default, VimRoom binds `<Leader>V` to `<Plug>VimroomToggle`, and sets up an 80 column workspace with at least 5 columns of space on either side (it doesn't help at all to have single-column sidebars, you see), and 3 lines of space above and below.  It assumes a black background when hiding visual distractions.  As of v0.4, VimRoom also sets up a `:VimroomToggle` command that has the same effect.
 
 Changing any of these assumptions is a simple matter of setting variables in your `.vimrc`.
 
 *   `g:vimroom_width` is the width of your workspace.
-*   `g:vimroom_min_sidebar_width` is the minimum sidebar width.
-*   `g:vimroom_background` is the background color to be used for hiding elements.
+*   `g:vimroom_min_sidebar_width` is the minimum sidebar width.  This will automatically expand to take up all the free space left after setting the main workspace window to `g:vimroom_width` columns.
+*   `g:vimroom_sidebar_height` sets the height of the upper and lower "sidebars."  If you don't want vertical padding, set this to 0.
+*   `g:vimroom_background` is the background color to be used for hiding elements.  Set this to your terminal's background color ("white", "black", etc.)
 *   `g:vimroom_scrolloff` specifies how many lines of text ought appear before and after the cursor.  This defaults to 999, which centers the cursor on the screen.
 
-You can bind the `<Plug>Vimroomize` function to any key combination you like via the usual mechanisms.  For example:
+You can bind the `<Plug>VimroomToggle` function to any key combination you like via the usual mechanisms.  For example:
 
-    nnoremap <silent> <Leader>mz <Plug>Vimroomize
+    nnoremap <silent> <Leader>mz <Plug>VimroomToggle
 
 Would bind the function to `<Leader>mz`.  Trivial, right?
 
