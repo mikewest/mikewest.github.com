@@ -23,6 +23,13 @@
     {% else %}
       <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="projects.mikewest.org: Changelog"> 
     {% endif %}
+    {% if page.seo %}
+        <meta name="description" content="{{ page.seo.desc }}">
+        <meta name="keywords" content="{{ page.seo.keywords }}, mike west, mikewest, webdev">
+    {% else %}
+        <meta name="description" content="Mike West's recent projects, notable and otherwise.">
+        <meta name="keywords" content="mike west, mike, west, webdev, web developer, projects">
+    {% endif %}
   </head>
   <body {% if page.bodyclass %}class="{{ page.bodyclass }}"{% endif %}>
     <nav>

@@ -1,6 +1,9 @@
 ---
 title:  "PyPlaceholder"
 layout: default
+seo:
+    desc:     "PyPlaceholder generates placeholder PNGs on the command line."
+    keywords: "placeholder, png, mockup, design"
 feed:   
     url:    /pyplaceholder/atom.xml
     title:  "PyPlaceholder: Changelog"

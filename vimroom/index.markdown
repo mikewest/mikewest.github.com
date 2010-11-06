@@ -1,6 +1,9 @@
 ---
 title:  "VimRoom"
 layout: default
+seo:
+    desc:     "VimRoom is WriteRoom, implemented inside Vim (not gVim.  Vim.)."
+    keywords: "vim, vimroom, writeroom, distraction free, writing, plugin"
 feed:   
     url:    /vimroom/atom.xml
     title:  "VimRoom: Changelog"

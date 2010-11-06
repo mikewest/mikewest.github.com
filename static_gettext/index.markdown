@@ -2,6 +2,9 @@
 title:      "`static_gettext`: Localization for Static Documents"
 layout:     static_gettext
 bodyclass:  homepage
+seo:
+    desc:     "`static_gettext` is a tiny internationalization framework for static documents (HTML or otherwise)."
+    keywords: "gettext, static documents, localization, l10n, internationalization, i18n"
 feed:   
     url:    /static_gettext/atom.xml
     title:  "`static_gettext`: Changelog"

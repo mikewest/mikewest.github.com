@@ -1,6 +1,9 @@
 ---
 title:  "JSLint Prime: A fork with some bad parts"
 layout: default
+seo:
+    desc:     "JSLint Prime: a fork of Douglas Crockford's JSLint, with some 'bad parts'."
+    keywords: "jslint, fork, less hurting of feelings, crockford, bad parts"
 feed:   
     url:    /jslint/atom.xml
     title:  "JSLint: Changelog"

@@ -1,6 +1,9 @@
 ---
 title:  "JSLint Utils"
 layout: default
+seo:
+    desc:     "JSLint Utils: easily integrate JSLint and Hudson, and lint on the command line"
+    keywords: "jslint, hudson, continuous integration, rhino, command line, node.js, node"
 feed:   
     url:    /jslint_utils/atom.xml
     title:  "JSLint Utils: Changelog"
