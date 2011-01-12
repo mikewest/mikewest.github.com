@@ -1,0 +1,7 @@
+---
+title:    "Changelog"
+layout:   nil
+version:  "0.6"
+---
+*   Fixed nasty bug in insert mode for the navigation mappings that were
+    added to v0.5.

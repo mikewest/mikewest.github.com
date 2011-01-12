@@ -12,7 +12,7 @@ VimRoom
 =======
 
 <ul class="actions">
-  <li><a href="http://github.com/mikewest/vimroom/tarball/v0.5" class="cta">Download current version (v0.5)</a></li> 
+  <li><a href="http://github.com/mikewest/vimroom/tarball/v0.6" class="cta">Download current version (v0.6)</a></li> 
   <li><a href="http://github.com/mikewest/vimroom" class="cta">Source on GitHub</a></li> 
 </ul>
 
